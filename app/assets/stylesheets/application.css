@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.text-deco-none {
+  text-decoration: none;
+}
