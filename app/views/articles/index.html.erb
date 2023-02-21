@@ -1,10 +1,14 @@
-<div class="container">
+<div class="container m-5">
+
   <h1>My articles</h1>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end m-4">
+  <%= link_to "Create a new article", new_article_path, class:"btn btn-primary text-deco-none" %>
+  </div>
     <ul>
       <% @articles.each do |article| %>
-        <li><%= link_to article.title, article%></li>
+        <li class="card m-3 p-4"><%= link_to article.title, article, class:"text-deco-none"%></li>
       <% end %>
     </ul>
 
-    <button type="button" class=" btn btn-outline-primary"><%= link_to "Create a new article", new_article_path %></button>
+
 </div>
